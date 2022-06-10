@@ -36,20 +36,29 @@
 //         document.getElementById('output').innerText = 'An error occurred';
 //     }
 // })
-let smartPeople = [
-    'Sheldon Cooper', 'Leonard Hofstater',
-    'Raj Koothapal', 'Howard Wolowitz',
-    'Penny', 'Chewbacca'
-];
+// let smartPeople = [
+//     'Sheldon Cooper', 'Leonard Hofstater',
+//     'Raj Koothapal', 'Howard Wolowitz',
+//     'Penny', 'Chewbacca'
+// ];
 
-let wrapper = 
-    document.getElementById('smartPeople')
-    smartPeople.forEach((item)=>{
-    wrapper.innerHTML +=
-     `<li>${item}</li>`
- });
+// let wrapper = 
+//     document.getElementById('smartPeople')
+//     smartPeople.forEach((item)=>{
+//     wrapper.innerHTML +=
+//      `<li>${item}</li>`
+//  });
 
+//  Create
+function smartPeople() {
+    // CreateElement('ul')
+    let ul = document.createElement('ul');
+    document.getElementsByTagName('body')[0].appendChild(ul);
+    ul.innerText = 'Sheldon Cooper', 'Leonard H', 'Raj K' ,'Howard W';
 
+}
+// Call a function
+smartPeople();
 
 
 
